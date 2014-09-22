@@ -1,7 +1,113 @@
-una prueba muy especifica de web 
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fitts Media Avance web</title>
+	<meta name="title" content="jQuery One Page Scroll by Pete R. | The Pete Design" />
+	<meta name="description" content="Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin" />
+	<link rel="image_src" href="/images/notify_better_image.png" />
 
-Fitts Media es lo mejor que me ha pasado
+	<meta content="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" property="og:url" />
+	<meta content="http://www.thepetedesign.com/images/onepage_scroll_image.png" property="og:image" />
+	<link rel="shortcut icon" id="favicon" href="favicon.png"> 
+	<meta name="author" content="Pete R.">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<link rel="canonical" href="http://www.thepetedesign.com/demos/onepage_scroll_demo.html" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+  <link href='css/style.css' rel='stylesheet' type='text/css'>  
+  <link rel="stylesheet" href="css/slicknav.css">
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>  
+	<script>
+	  $(document).ready(function(){
+      $(".main").onepage_scroll({
+        sectionContainer: "section",
+        responsiveFallback: 600,
+        loop: true
+      });
+		});
+		
+	</script>
 
-Esta es la prueba de michel
-
-aprendimos a utilizar github
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+  <header>
+    <figure id="logo">
+      <img src="img/logo.png" alt="logo de la empresa">
+    </figure>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Portafolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Contactos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="wrapper">
+	  <div class="main">
+      <section class="page1">
+        <div class="page_container">
+          <h1>One Page Scroll</h1>
+          <h2>Create an Apple-like one page scroller website (iPhone 5S website) with One Page Scroll plugin</h2>
+          <p class="credit">Created by <a href="http://www.thepetedesign.com">Pete R.</a>, Founder of <a href="http://www.bucketlistly.com" target="_blank">BucketListly</a></p>
+          <div class="btns">
+  	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+  	      </div>
+  	    </div>
+  	    <img src="img/phones.png" alt="phones">
+      </section>
+	    
+	    <section class="page2">
+	      <div class="page_container">
+          <h1>Ready-to-use plugin</h1>
+          <h2>All you need is an HTML markup, call the script and BAM!</h2>
+          <code class="html">
+  	        &lt;div class="main"&gt;<br>
+  	          &lt;section&gt;...&lt;/section&gt;<br>
+  	          &lt;section&gt;...&lt;/section&gt;<br>
+  	          ...<br>
+  	        &lt;/div&gt;
+  	      </code>
+  	      
+  	      <code class="js">
+	          $(".main").onepage_scroll();
+	        </code>
+	      </div>
+      </section>
+	    
+	    <section class="page3">
+	      <div class="page_container">
+          <h1>Pretty Neat Eh?</h1>
+          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
+          <div class="btns">
+  	        <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+  	      </div>
+  	    </div>
+      </section>
+       <section class="page3">
+        <div class="page_container">
+          <h1>Pretty Neat Eh?</h1>
+          <h2>You can customise the animation timing, the selector or even the animation easing using CSS3. I can't wait to see what you guys will come up with. Don't forget to grab them for free on Github'</h2>
+          <div class="btns">
+            <a class="reload btn" href="https://github.com/peachananr/onepage-scroll">Download on Github</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="js/jquery.slicknav.js"></script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+    $('#menu').slicknav();
+  });
+  </script>
+</body>
+</html>
